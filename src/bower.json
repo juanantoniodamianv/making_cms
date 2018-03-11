@@ -1,0 +1,10 @@
+{
+  "name": "MakingCMS",
+  "version": "0.0.1",
+  "author": "Vargas Juan Antonio Damian",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "*",
+    "normalize-css": "*"
+  }
+}
