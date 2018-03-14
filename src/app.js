@@ -18,8 +18,8 @@ var stylus = require('stylus');
 // Stylus Middleware
 app.use(
   stylus.middleware({
-    src: __dirname + '/stylus',
-    dest: __dirname + '/public/css',
+    src: `${__dirname}/stylus`,
+    dest: `${__dirname}/public/css`,
     compile: function(str, path) {
       return stylus(str).set('filename', path).set('compress', true);
     }
@@ -30,8 +30,8 @@ app.use(
 app.engine('.hbs', exphbs({
   extname: '.hbs',
   defaultLayout: 'main',
-  layoutsDir: __dirname + '/views/layouts',
-  partialsDir: __dirname + '/views/partials',
+  layoutsDir: `${__dirname}/views/layouts`,
+  partialsDir: `${__dirname}/views/partials`,
   helpers: hbsHelpers
 }));
 
